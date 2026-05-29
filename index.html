@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Parker | Cybersecurity & Dev</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Security note: CSP is set via meta & headers later -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+</head>
+<body>
+  <div class="container">
+    <!-- Terminal-style header -->
+    <div class="terminal-bar">
+      <span class="red"></span><span class="yellow"></span><span class="green"></span>
+      <span class="term-text"> visitor@cyberportfolio:~</span>
+    </div>
+
+    <div class="content">
+      <h1 id="glitch">Alex Parker <span class="blink">_</span></h1>
+      <p class="subtitle">🔐 Cybersecurity Professional | Red Team Enthusiast</p>
+
+      <div class="security-badge">
+        ✅ HTTPS | CSP | Secure Headers | No mixed content
+      </div>
+
+      <div class="skills">
+        <div class="card">🛡️ Penetration Testing</div>
+        <div class="card">🔒 Threat Intelligence</div>
+        <div class="card">🧠 SOC Analysis</div>
+        <div class="card">🌐 Python | Bash | JS</div>
+      </div>
+
+      <div class="about">
+        <h2>🔍 Security-first mindset</h2>
+        <p>This site uses:
+          <ul>
+            <li>Content Security Policy (CSP) – to block XSS</li>
+            <li>No external CDNs by default – reduces supply chain risk</li>
+            <li>Subresource Integrity ready for future CDN use</li>
+            <li>HTTPS enforced (GitHub Pages)</li>
+          </ul>
+        </p>
+      </div>
+
+      <button id="darkModeToggle">🌙 Dark Mode</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
