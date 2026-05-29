@@ -2,7 +2,7 @@
 
 Modern, secure portfolio site with CSP, HTTPS, and dark mode.
 
-**Live demo:** https://yourusername.github.io/repo-name
+**Live demo:** https://emilymontoya.github.io/personal-website
 
 ## Security features demonstrated
 - Content Security Policy (CSP) header
