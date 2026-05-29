@@ -1,1 +1,12 @@
-# personal-website
+# Cybersecurity Personal Website
+
+Modern, secure portfolio site with CSP, HTTPS, and dark mode.
+
+**Live demo:** https://yourusername.github.io/repo-name
+
+## Security features demonstrated
+- Content Security Policy (CSP) header
+- No insecure CDNs
+- HTTPS only
+- No mixed content
+- LocalStorage theme (no tracking)
