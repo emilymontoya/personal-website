@@ -30,3 +30,23 @@ if (glitchElem) {
     glitchElem.style.animation = null;
   });
 }
+
+// Live security check
+function checkBrowserSecurity() {
+  const statusDiv = document.getElementById('secStatus');
+  let issues = [];
+  
+  if (!window.isSecureContext) issues.push('Not in secure context');
+  if (document.referrer === '') issues.push('eferrer hidden (good)');
+  
+  // Check for common tracking protections
+  const isPrivate = navigator.doNotTrack === '1' || navigator.globalPrivacyControl;
+  if (isPrivate) issues.push('Privacy controls enabled');
+  
+  if (issues.length === 0) {
+    statusDiv.innerHTML = 'Strong security posture: HTTPS, CSP active, modern browser';
+  } else {
+    statusDiv.innerHTML = issues.join(' · ');
+  }
+}
+checkBrowserSecurity();

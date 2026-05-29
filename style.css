@@ -143,3 +143,12 @@ body.light .container {
 body.light .security-badge {
   background: #fff6e0;
 }
+
+.security-check {
+  background: #0a0f1e88;
+  border-radius: 12px;
+  padding: 0.8rem;
+  margin: 1.5rem 0;
+  font-size: 0.85rem;
+  border: 1px solid #0ff3;
+}
